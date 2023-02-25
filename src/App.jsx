@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+
+import InputBox from "./InputBox";
+
+import classes from "./App.module.css";
 
 export default () => {
-  const helloVar = "Not another one of these...";
   return (
     <>
-      <div>
-        <h1>{helloVar}</h1>
+      <div className={classes.app}>
+        <h1>React2Do</h1>
+        <InputBox />
       </div>
     </>
   );
