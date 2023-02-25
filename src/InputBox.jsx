@@ -1,5 +1,3 @@
-import DisplayToDos from "./DisplayToDos";
-
 import classes from "./InputBox.module.css";
 
 export default () => {
@@ -8,7 +6,6 @@ export default () => {
       <form>
         <input placeholder="> Enter To-Do" />
       </form>
-      <DisplayToDos />
     </>
   );
 };
