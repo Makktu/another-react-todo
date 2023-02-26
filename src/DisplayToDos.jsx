@@ -1,18 +1,15 @@
 import classes from "./DisplayToDos.module.css";
 
-export default ({ todoList }) => {
-  console.log(todoList[0].todo);
-
+const DisplayToDos = (props) => {
   return (
     <>
       <div className={classes.todoDisplayBox}>
-        <ul>
-          {" "}
-          {todoList.map((todo) => {
-            <li key={todo.id}>{todo.todo}</li>;
-          })}{" "}
-        </ul>
+        {props.todoList.map((todo) => {
+          <p key={todo.id}>{todo.todo}</p>;
+        })}
       </div>
     </>
   );
 };
+
+export default DisplayToDos;

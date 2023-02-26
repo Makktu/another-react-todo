@@ -4,7 +4,7 @@ export default () => {
   return (
     <>
       <form>
-        <input placeholder="> Enter To-Do" />
+        <input placeholder="⇢ Enter To-Do" />
       </form>
     </>
   );
